@@ -2,7 +2,7 @@
 #include<stdio.h> // We can use c program in .cpp file using <stdio.h>.
 using namespace std;
 
-//Example 1:-
+// /*Example 1:-*/
 // struct rectangle
 // {
 // int length;
@@ -17,7 +17,7 @@ using namespace std;
 //     cout<<"Area of Rectangle is : "<<b.length*b.breadth<<endl;  // Give me the area of rectangle
 // }
 
-// Example 2:-
+// /*Example 2:-*/
 // struct card  // Deck of 52 cards example
 // {
 // int face;  // 1,2,3,4,5,6,7,8,9,10,11,12,13
@@ -30,9 +30,10 @@ using namespace std;
 //     cout<<deck[1].face<<endl;
 //     cout<<deck[1].shape<<endl;
 //     cout<<deck[2].color<<endl;
+//     cout<<sizeof(deck)<<endl;  // Print the size of structure variable
 // }
 
-// Example 3:- Declare structure variable as global variable
+// /*Example 3:-*/ Declare structure variable as global variable
 // struct card  // Deck of 52 cards example
 // {
 // int face;  // 1,2,3,4,5,6,7,8,9,10,11,12,13
