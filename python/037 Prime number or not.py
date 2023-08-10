@@ -6,3 +6,4 @@ elif a%2==0:
     print("No!",a,"is not the prime number")
 elif a%1==0 and a%a==0:
     print("Yes!",a,"is a prime number")
+    
