@@ -7,7 +7,6 @@ union employee
     int age;
     float salary;
 };
-
 int main()
 {
     int n;

@@ -40,5 +40,4 @@ int main()
 {
 student obj;
 obj.student1();
-obj.student2();
 }
