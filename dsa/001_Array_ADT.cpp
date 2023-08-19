@@ -1,20 +1,35 @@
-#include <stdio.h>
-struct Array{
-    int A[20];
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
     int size;
-    int length;
-};
-// Display Array Elements
-void Display(struct Array arr){
-    int i;
-    printf("Elements are : ");
-    for(i=0;i<arr.length;i++){
-        printf("%d",arr.A[i]);
+    cout << "Enter the number of strings: ";
+    cin >> size;
+    cin.ignore();  // Ignore the newline character left in the buffer
+
+    string arr[size];  // Declare an array of strings
+
+    for (int i = 0; i < size; i++) {
+        getline(cin, arr[i]);  // Read the entire line as a string
     }
-}
-int main(){
-    struct Array arr={{1,2,3,4,5},20,5};
-    // Calling Display() function to display Array
-    Display(arr);
+
+    string key;
+    getline(cin, key);
+
+    bool found = false;
+    for (int i = 0; i < size; i++) {
+        if (key == arr[i]) {
+            cout << "Key found at index " << i << endl;
+            found = true;
+            break; // Exit the loop once key is found
+        }
+    }
+
+    if (!found) {
+        cout << "String not found" << endl;
+    }
+
     return 0;
 }
