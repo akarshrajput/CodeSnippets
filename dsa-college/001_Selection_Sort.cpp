@@ -17,9 +17,7 @@ int main() {
   int array[] = {5, 3, 1, 2, 4};
   int n = sizeof(array) / sizeof(array[0]);  // Length of Array
   selection_sort(array, n);
-  for (int i = 0; i < n; i++) {
-    cout << array[i] << " ";
-  }
+  cout<<array[1];
   cout << endl;
   return 0;
 }
