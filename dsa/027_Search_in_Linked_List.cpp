@@ -43,5 +43,5 @@ int main()
     //     cout<<p->data<<" ";
     //     p=p->next;
     // }
-    Search(head,6);
+    Search(head,3);
 }
