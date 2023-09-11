@@ -13,8 +13,8 @@ int Max(Node* p)
         if(p->data>max)
         {
             max=p->data;
-        p=p->next;
         }
+        p=p->next;
     }
     return max;
 }

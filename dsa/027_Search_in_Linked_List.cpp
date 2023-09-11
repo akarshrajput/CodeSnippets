@@ -14,9 +14,7 @@ Node* Search(Node* p,int key)
             cout<<"Key "<<p->data<<" is found";
             return 0;
         }
-        else{
-            p=p->next;
-        }
+        p=p->next;
     }
     return NULL;
 }

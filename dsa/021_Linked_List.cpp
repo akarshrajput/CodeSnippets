@@ -3,7 +3,7 @@ using namespace std;
 struct Node
 {
     int data;
-    Node* ptr;
+    Node* next;
 };
 int main()
 {
@@ -12,15 +12,15 @@ int main()
     Node* temp;
     Node* last;
     head->data=arr[0];
-    head->ptr=nullptr;
+    head->next=nullptr;
     last=head;
     // Making more Node using loop from array
     for(int i=1;i<sizeof(arr)/sizeof(arr[0]);i++)
     {
         temp=new Node;
         temp->data=arr[i];
-        temp->ptr=nullptr;
-        last->ptr=temp;
+        temp->next=nullptr;
+        last->next=temp;
         last=temp;
     }
     // Display Linked List
@@ -28,6 +28,6 @@ int main()
     while(p!=nullptr)
     {
         cout<<p->data<<" ";
-        p=p->ptr;
+        p=p->next;
     }
 }
